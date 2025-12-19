@@ -20,6 +20,7 @@ For complete file organization features, see the [previous repository](https://g
 ### Prerequisites
 - Python 3.7 or higher
 - tkinter (usually included with Python)
+
 **No additional packages required** - Uses only Python standard library:
    - `tkinter` - GUI interface
    - `zipfile` - Backup compression
@@ -27,6 +28,7 @@ For complete file organization features, see the [previous repository](https://g
    - `pathlib` - Path handling
    - `json` - Configuration storage
    - `threading` - Async operations
+
 **Run the application**
 ```bash
 python smartFO.py
@@ -35,22 +37,22 @@ python smartFO.py
 ## HOW IT WORKS
 
 ### Initial Interface
-![Empty interface](screenshots/sc_1.png)
+![Empty interface](screenshot/sc_1.png)
 *Clean, modern interface with folder selection and action buttons*
 
 ### Organizing Files
-![Files being organized](screenshots/sc_2.png)
+![Files being organized](screenshot/sc_2.png)
 *Real-time activity log showing files being sorted into folders by extension*
 
 ### Backup Creation
-![Backup success dialog](screenshots/sc_3.png)
+![Backup success dialog](screenshot/sc_3.png)
 *Confirmation dialog showing backup details: location, file count, and processing time*
 
 ### Backup Files Structure
-![Backup folder structure](screenshots/sc_4.png)
+![Backup folder structure](screenshot/sc_4.png)
 *Generated backup files in the file explorer showing ZIP archive and log file*
 
-![Folder hierarchy](screenshots/sc_5.png)
+![Folder hierarchy](screenshot/sc_5.png)
 *Complete project structure showing organized folders and backup system*
 
 
@@ -86,13 +88,27 @@ Each entry includes:
 ## Project Structure
 
 ```
-file-organizer-backup/
-├── smartFO.py              # Main application with GUI
-├── backup_manager.py       # Backup logic and compression
-├── README.md              # This file
-└── backups/               # Generated backups (created at runtime)
-    ├── backup_*.zip
-    └── backup.log
+backup-files/
+├── scripts/
+│   ├── backup_manager.py   # Backup logic and compression
+│   └── smartFO.py          # Main application with GUI
+├── backups/                # Generated backups (created at runtime)
+│   ├── backup_*.zip        # Compressed backup archives
+│   └── backup.log          # Operation log file
+├── screenshot/            
+│   ├── sc_1.png
+│   ├── sc_2.png
+│   ├── sc_3.png
+│   ├── sc_4.png
+│   └── sc_5.png
+├── test_folder/            
+│   ├── sorted_folders/     # Organized files by extension
+│   │   ├── doc/
+│   │   ├── jpg/
+│   │   ├── pdf/
+│   │   └── zip/
+│   └── history.json        # Organization history
+└── README.md               
 ```
 
 
@@ -149,7 +165,7 @@ The application handles common errors gracefully:
 - **Disk full** - Catches and reports exception
 
 
-## 📊 Performance
+## Performance
 
 Typical backup performance:
 - **14 files** → **0.74 seconds**
