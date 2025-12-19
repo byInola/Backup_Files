@@ -66,18 +66,6 @@ python smartFO.py
    - Number of files backed up
    - Processing time
 
-### Backup Output
-
-Backups are saved in a `backups` folder next to your source folder:
-
-```
-your_folder/
-├── backups/
-│   ├── backup_2025-12-19.zip
-│   ├── backup_2025-12-19_v1.zip
-│   └── backup.log
-└── [your files]
-```
 
 ### Log File Format
 
