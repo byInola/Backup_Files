@@ -104,10 +104,6 @@ class FileOrganizer:
         self.history_manager.save(self.history)
         return restored
 
-
-
-
-
 class UIComponents:
     @staticmethod
     def create_label(parent, text, font_size=10, bold=False, **kwargs):
@@ -165,7 +161,7 @@ class FileOrganizerApp:
         btn_frame = tk.Frame(parent, bg="#f6f8fb")
         btn_frame.pack(fill="x", pady=(0, 15))
         
-        # Configurare uniformă pentru toate butoanele
+       
         button_width = 15
         button_padx = 5
         
@@ -320,3 +316,4 @@ if __name__ == "__main__":
     root = tk.Tk()
     app = FileOrganizerApp(root)
     root.mainloop()
+
