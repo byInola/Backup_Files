@@ -2,8 +2,6 @@
 
 A Python desktop application that automatically organizes files by extension and creates compressed backups with versioning and logging.
 
----
-
 ##  Features
 
 ### Backup System 
@@ -16,7 +14,6 @@ A Python desktop application that automatically organizes files by extension and
 ### File Organization
 For complete file organization features, see the [previous repository](https://github.com/byInola/Smart-File-Organizer).
 
----
 
 ## Getting Started
 
@@ -38,25 +35,24 @@ python smartFO.py
 ## HOW IT WORKS
 
 ### Initial Interface
-![Empty interface](attachment://image1)
+![Empty interface](screenshots/sc_1.png)
 *Clean, modern interface with folder selection and action buttons*
 
 ### Organizing Files
-![Files being organized](attachment://image2)
+![Files being organized](screenshots/sc_2.png)
 *Real-time activity log showing files being sorted into folders by extension*
 
 ### Backup Creation
-![Backup success dialog](attachment://image3)
+![Backup success dialog](screenshots/sc_3.png)
 *Confirmation dialog showing backup details: location, file count, and processing time*
 
 ### Backup Files Structure
-![Backup folder structure](attachment://image4)
+![Backup folder structure](screenshots/sc_4.png)
 *Generated backup files in the file explorer showing ZIP archive and log file*
 
-![Folder hierarchy](attachment://image5)
+![Folder hierarchy](screenshots/sc_5.png)
 *Complete project structure showing organized folders and backup system*
 
----
 
 ## How to Use
 
@@ -98,7 +94,6 @@ Each entry includes:
 - File count
 - Duration
 
----
 
 ## Project Structure
 
@@ -112,7 +107,6 @@ file-organizer-backup/
     └── backup.log
 ```
 
----
 
 ##  Technical Implementation
 
